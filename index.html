@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud CI/CD - Ahmed Jalambo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>My Cloud CI/CD Site</h1>
+        <div class="info">
+            <p><b>Name:</b> Ahmed Jalambo</p>
+            <p><b>Course:</b> Cloud Computing</p>
+            <p><b>Instructor:</b> Dr. Faten F. Abushmmala</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>What is CI/CD?</h2>
+            <p>
+                CI/CD stands for Continuous Integration and Continuous Deployment.
+                Continuous Integration (CI) means that every time a developer pushes code changes,
+                the system automatically runs checks and tests to make sure the new code works correctly
+                and does not break anything. Continuous Deployment (CD) takes it further by automatically
+                deploying the tested code to a live server or website without manual intervention.
+                Together, CI/CD helps teams deliver updates faster, catch bugs early, and keep
+                the software always in a working state. It is a core practice in modern cloud-based
+                development workflows.
+            </p>
+        </section>
+
+        <section>
+            <h2>My Pipeline</h2>
+            <p>
+                When I push code to the <code>main</code> branch on GitHub, a GitHub Actions workflow
+                triggers automatically. First, it checks out my code and verifies that all required files
+                (index.html, style.css, script.js) exist. Then it uploads the site files as an artifact
+                and deploys them to GitHub Pages. Within a minute or two, my live website is updated
+                with the latest changes — no manual upload needed.
+            </p>
+        </section>
+
+        <section class="interactive-section">
+            <h2>Interactive Demo</h2>
+            <p>Click the button below to see JavaScript in action:</p>
+            <button id="btn">Click Me!</button>
+            <p id="msg"></p>
+
+            <div class="counter-box">
+                <p>Button click counter:</p>
+                <span id="counter">0</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ahmed Jalambo — Cloud Computing Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
